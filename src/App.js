@@ -4,6 +4,7 @@ import AllQuotes from "./pages/AllQuotes";
 import QuoteDetail from "./pages/QuoteDetail";
 import NewQuote from "./pages/NewQuote";
 import Layout from "./components/layout/Layout";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
           <Route path="/new-quote">
             <NewQuote />
+          </Route>
+          {/* //any url can match this, can only be added at last*/}
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </Layout>
