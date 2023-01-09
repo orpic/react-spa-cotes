@@ -29,8 +29,14 @@ const QuoteList = (props) => {
 
   const changeSortingHandler = () => {
     // push for going back and replace for not going back
+    history.push({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAcsending ? "desc" : "asc"}`,
+    });
 
-    history.push("/quotes?sort=" + (isSortingAcsending ? "desc" : "asc"));
+    // history.push(
+    //   `${location.pathname}?sort=${isSortingAcsending ? "desc" : "asc"}`
+    // );
   };
 
   return (
