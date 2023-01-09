@@ -1,4 +1,4 @@
-import classes from './QuoteItem.module.css';
+import classes from "./QuoteItem.module.css";
 
 const QuoteItem = (props) => {
   return (
@@ -9,7 +9,7 @@ const QuoteItem = (props) => {
         </blockquote>
         <figcaption>{props.author}</figcaption>
       </figure>
-      <a className='btn'>
+      <a className="btn" href="#no-link">
         View Fullscreen
       </a>
     </li>
